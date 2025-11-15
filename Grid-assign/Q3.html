@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai Calculator</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .calculator {
+        width: 320px;
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Display */
+      .display {
+        height: 60px;
+        background: #1b1b1b;
+        color: white;
+        font-size: 28px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      /* Calculator grid buttons */
+      .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+
+      .btn {
+        padding: 18px;
+        background: #e2e2e2;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      .btn:hover {
+        background: #cfcfcf;
+      }
+
+      /* Special buttons */
+      .operator {
+        background: #ff9500;
+        color: white;
+      }
+
+      .operator:hover {
+        background: #e08900;
+      }
+
+      .equal {
+        background: #34c759;
+        color: white;
+        grid-column: span 2;
+      }
+
+      .equal:hover {
+        background: #2fa94d;
+      }
+
+      .clear {
+        background: #ff3b30;
+        color: white;
+      }
+
+      .clear:hover {
+        background: #e23228;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <!-- Display -->
+      <div class="display">0</div>
+
+      <!-- Buttons Grid -->
+      <div class="buttons">
+        <div class="btn clear">C</div>
+        <div class="btn">()</div>
+        <div class="btn">%</div>
+        <div class="btn operator">/</div>
+
+        <div class="btn">7</div>
+        <div class="btn">8</div>
+        <div class="btn">9</div>
+        <div class="btn operator">*</div>
+
+        <div class="btn">4</div>
+        <div class="btn">5</div>
+        <div class="btn">6</div>
+        <div class="btn operator">-</div>
+
+        <div class="btn">1</div>
+        <div class="btn">2</div>
+        <div class="btn">3</div>
+        <div class="btn operator">+</div>
+
+        <div class="btn">0</div>
+        <div class="btn">.</div>
+
+        <div class="btn equal">=</div>
+      </div>
+    </div>
+  </body>
+</html>

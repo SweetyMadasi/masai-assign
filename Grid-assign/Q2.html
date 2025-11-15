@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weekly Class Schedule</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f6f6f6;
+        padding: 40px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .timetable {
+        display: grid;
+        width: 900px;
+        margin: auto;
+        grid-template-columns: repeat(6, 1fr);
+        border: 3px solid #444;
+        background: white;
+      }
+
+      .cell {
+        border: 1px solid #555;
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .header {
+        background: #d2e4fc;
+        font-size: 19px;
+      }
+
+      .time {
+        background: #fcd9d9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Weekly Class Schedule</h1>
+
+    <div class="timetable">
+      <!-- Row 1 -->
+      <div class="cell header">Time</div>
+      <div class="cell header">Monday</div>
+      <div class="cell header">Tuesday</div>
+      <div class="cell header">Wednesday</div>
+      <div class="cell header">Thursday</div>
+      <div class="cell header">Friday</div>
+
+      <!-- Row 2 -->
+      <div class="cell time">9:00 - 10:00</div>
+      <div class="cell">Math</div>
+      <div class="cell">English</div>
+      <div class="cell">EVS</div>
+      <div class="cell">Math</div>
+      <div class="cell">English</div>
+
+      <!-- Row 3 -->
+      <div class="cell time">10:00 - 11:00</div>
+      <div class="cell">Science</div>
+      <div class="cell">Math</div>
+      <div class="cell">Art</div>
+      <div class="cell">EVS</div>
+      <div class="cell">Computer</div>
+
+      <!-- Row 4 -->
+      <div class="cell time">11:00 - 12:00</div>
+      <div class="cell">PT</div>
+      <div class="cell">Science</div>
+      <div class="cell">Math</div>
+      <div class="cell">Games</div>
+      <div class="cell">EVS</div>
+
+      <!-- Row 5 - Break -->
+      <div class="cell time">12:00 - 1:00</div>
+      <div class="cell" style="background: #fff3b0" colspan="5">
+        LUNCH BREAK
+      </div>
+
+      <!-- Row 6 -->
+      <div class="cell time">1:00 - 2:00</div>
+      <div class="cell">English</div>
+      <div class="cell">PT</div>
+      <div class="cell">Science</div>
+      <div class="cell">Drawing</div>
+      <div class="cell">Math</div>
+
+      <!-- Row 7 -->
+      <div class="cell time">2:00 - 3:00</div>
+      <div class="cell">Computer</div>
+      <div class="cell">Music</div>
+      <div class="cell">English</div>
+      <div class="cell">Science</div>
+      <div class="cell">PT</div>
+    </div>
+  </body>
+</html>
