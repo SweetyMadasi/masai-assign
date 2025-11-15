@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+
+    <style>
+        body {
+            background: #f6f6f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .product-box {
+            width: 500px;
+            height: 600px;
+            background: #fff;
+
+            /* Box Model */
+            padding: 30px;
+            margin: 10px;
+            border: 3px solid grey;
+
+            /* Style */
+            border-radius: 15px;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+
+            /* Display for vertical alignment */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .product-box img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
