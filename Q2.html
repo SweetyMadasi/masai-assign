@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simple Vertical Box</title>
+    <style>
+      /* Page layout */
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f2f4f8;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Card that holds the vertical boxes */
+      .container {
+        width: 320px; /* container width */
+        padding: 20px; /* inner spacing */
+        border: 2px solid #222; /* border */
+        border-radius: 12px; /* rounded corners */
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12); /* subtle shadow */
+        background: #ffffff;
+        box-sizing: border-box; /* include padding in width */
+      }
+
+      /* Vertical stack */
+      .vertical-box {
+        display: flex;
+        flex-direction: column; /* stack children vertically */
+        gap: 16px; /* space between boxes (margin alternative) */
+      }
+
+      /* Individual box styles */
+      .box {
+        padding: 18px;
+        border: 2px solid #0b5cff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(11, 92, 255, 0.08);
+        background: linear-gradient(180deg, #ffffff, #f0f7ff);
+        text-align: center;
+        font-weight: 600;
+        box-sizing: border-box;
+      }
+
+      /* Variation sizes (optional, shows box-model control) */
+      .box.small {
+        height: 50px;
+      }
+      .box.medium {
+        height: 70px;
+      }
+      .box.large {
+        height: 100px;
+      }
+
+      /* Small caption under container */
+      .note {
+        margin-top: 12px;
+        text-align: center;
+        font-size: 13px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="vertical-box">
+        <div class="box large">Box 1 — Large</div>
+        <div class="box medium">Box 2 — Medium</div>
+        <div class="box small">Box 3 — Small</div>
+      </div>
+
+      <div class="note">
+        Simple vertical box layout using box-model (padding, margin, border,
+        shadow)
+      </div>
+    </div>
+  </body>
+</html>
