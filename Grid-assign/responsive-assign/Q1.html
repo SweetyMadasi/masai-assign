@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Cards</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #faf7f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Container grid */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding: 20px;
+        }
+
+        /* Card box */
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Title + Price Row */
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .price {
+            color: #c2963c;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Card description */
+        .card-desc {
+            color: #7a7a7a;
+            line-height: 1.4;
+            font-size: 14px;
+        }
+
+        /* MEDIA QUERIES */
+
+        /* Medium screens (TABLET) → 2 cards per row */
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Small screens (MOBILE) → 1 card per row */
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Masai Coffee Menu</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Cappuccino</div>
+                <div class="price">$49</div>
+            </div>
+            <p class="card-desc">Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Americano</div>
+                <div class="price">$49</div>
+            </div>
+            <p class="card-desc">Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Espresso</div>
+                <div class="price">$49</div>
+            </div>
+            <p class="card-desc">Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Macchiato</div>
+                <div class="price">$49</div>
+            </div>
+            <p class="card-desc">Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Mocha</div>
+                <div class="price">$49</div>
+            </div>
+            <p class="card-desc">Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Coffee Latte</div>
+                <div class="price">$49</div>
+            </div>
+            <p class="card-desc">Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
