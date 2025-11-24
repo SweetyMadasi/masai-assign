@@ -1,4 +1,3 @@
-
 console.log(`5 + 7 = ${5 + 7}`);
 
 const multiLine = `
@@ -12,12 +11,11 @@ const firstName = "John";
 const lastName = "Doe";
 console.log(`Full Name: ${firstName} ${lastName}`);
 
-
 const square = (n) => n * n;
-console.log(square(6)); 
+console.log(square(6));
 const obj = {
   value: 50,
-  test: () => console.log(this.value), 
+  test: () => console.log(this.value),
 };
 obj.test();
 const obj2 = {
@@ -26,8 +24,7 @@ const obj2 = {
     console.log(this.value);
   },
 };
-obj2.test(); 
-
+obj2.test();
 
 const product = { name: "Pen", price: 10 };
 const copyProduct = { ...product };
@@ -39,7 +36,7 @@ const merged = { ...a, ...b };
 console.log(merged);
 
 const maxValue = (...nums) => Math.max(...nums);
-console.log(maxValue(4, 9, 2, 11, 1)); 
+console.log(maxValue(4, 9, 2, 11, 1));
 
 // a) array destructuring
 const arr = [10, 20, 30];
@@ -53,14 +50,11 @@ console.log(brand);
 
 // c) optional chaining
 const info = {};
-console.log(info?.user?.name); 
-
-
+console.log(info?.user?.name);
 
 for (var i = 0; i < 3; i++) {}
-console.log(i); 
+console.log(i);
 
 for (let j = 0; j < 3; j++) {}
-
 
 console.log("const is used to prevent reassignment of variables.");
